@@ -60,5 +60,6 @@ public class Test {
             softAssert.assertTrue(responseCode<400, "The link with Text: " + link.getText() + " is broken!" + " The response code is: "+responseCode);
         }
         softAssert.assertAll();
+        driver.get("https://www.google.pl");
     }
 }
